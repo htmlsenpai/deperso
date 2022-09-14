@@ -1,0 +1,192 @@
+
+body {
+    font-family: Verdana;
+}
+
+#logo {
+    height: 50px;
+    width: 100px;
+    border-radius: 15%;
+    box-shadow: 0 0 5px #ffffff;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(86, 84, 84);
+    padding: 10px;
+
+}
+
+#links {
+    padding: 10px;
+    padding-block: 15px;
+    display: none;
+    
+}
+
+.fa fa search {
+    border: none;
+}
+
+#topnav {
+    position: relative;
+    background: transparent;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+}
+
+.slideshow {
+    
+    position: relative;
+    margin: auto;
+    top: 0;
+    max-width: 1000vw;
+    max-height: 400px;
+    overflow: hidden;
+
+}
+
+
+.text {
+    color: #ffffff;
+    text-shadow: 0 0 2px #000000;
+    font-size: 15px;
+    font-family: Verdana;
+    font-style: italic;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+.slides {
+    display: none;
+
+}
+
+
+.dot {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    margin: auto;
+    background-color: #00ACEC;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+}
+
+
+.active {
+    background-color: #b0b0b0;
+}
+
+.dot:hover {
+    background-color: #92b0bb;
+}
+
+/* animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.8s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+#btnHam {
+
+    position: absolute;
+    right: 2%;
+    top: 20px;
+
+}
+
+#hamburger {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 4rem;
+    height: 6rem;
+    border: 0;
+    background: transparent;
+    gap: .55rem;
+}
+
+#hamburger div {
+    background: #545454;
+    height: 2.5px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+
+button:hover div:first-child {
+    transform: rotate(45deg);
+}
+
+button:hover div:nth-child(2) {
+    opacity: 0;
+}
+
+button:hover div:last-child {
+    transform: rotate(-45deg);
+}
+
+
+
+.section {
+    padding: 10px;
+}
+
+img {
+    /* width: 50px;
+    height: 33.34px; */
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    display: none;
+}
+
+
+@media screen and (min-width: 420px) {
+    /* tamaño mediano de pantalla */
+
+    .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        /* background-color: cadetblue; */
+    }
+}
+
+@media screen and (min-width: 720px) {
+
+    /* tamaño grande de pantalla */
+
+    #dropdown {
+        display: block;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
