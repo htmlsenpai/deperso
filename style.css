@@ -161,11 +161,13 @@ button:hover div:last-child {
 .section0 {
 
     align-items: left;
+    border-right: 4px solid #00ACEC;
 }
 
 .section1 {
 
     align-items: center;
+    border-right: 4px solid #00ACEC;
    
 }
 .section2 {
@@ -183,7 +185,8 @@ img {
 }
 
 .footer {
-    display: none;
+    display: flex;
+    flex-direction: inherit;
 }
 
 
