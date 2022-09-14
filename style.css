@@ -200,7 +200,7 @@ img {
 
     /* tamaño grande de pantalla */
 #topnav {
-    display: block;
+    display: flex;
 }
 
 #hamburger {
